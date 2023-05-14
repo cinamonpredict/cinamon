@@ -10,14 +10,14 @@ model = tf.keras.models.load_model("saved_model/gradenewone.hdf5")
 uploaded_file = st.file_uploader("Choose a image file")
 
 map_dict = { 0:'alba',
-1:'blackpeper_low',
-2:'c4',
-3:'c4_c5',
-4:'extraspecial',
-5:'faq',
-6:'grade_1',
-7:'grade_2',
-8:'NoGrade'
+             1:'blackpeper_low',
+             2:'c4',
+             3:'c4_c5',
+             4:'extraspecial',
+             5:'faq',
+             6:'grade_1',
+             7:'grade_2',
+             8:'NoGrade'
             }
 
 
