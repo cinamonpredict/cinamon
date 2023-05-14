@@ -12,7 +12,7 @@ uploaded_file = st.file_uploader("Choose a image file")
 map_dict = {0:'StripeCanker',
             1:'RoughBark',
             2:'Sudupulli-White-spot',
-            3:'Leaf-Blight'
+            3:'Leaf-Blight',
             4:'Gammiris-pala-makka',
             5:'Diconocris-Distani-drake'
             }
