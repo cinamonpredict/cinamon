@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
-model = tf.keras.models.load_model("saved_model/disease.hdf5")
+model = tf.keras.models.load_model("saved_model/md.hdf5")
 ### load file
 uploaded_file = st.file_uploader("Choose a image file")
 
@@ -14,7 +14,8 @@ map_dict = {0:'StripeCanker',
             2:'Sudupulli-White-spot',
             3:'Leaf-Blight',
             4:'Gammiris-pala-makka',
-            5:'Diconocris-Distani-drake'
+            5:'Diconocris-Distani-drake',
+            6:'NoT'
             }
 
 
@@ -34,3 +35,6 @@ if uploaded_file is not None:
     if Genrate_pred:
         prediction = model.predict(img_reshape).argmax()
         st.title("Predicted Label for the image is {}".format(map_dict [prediction]))
+            if map_dict [prediction] == "Sudupulli-White-spot":
+                        
+        
