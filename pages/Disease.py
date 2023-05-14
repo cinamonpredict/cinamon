@@ -15,7 +15,7 @@ map_dict = {0:'StripeCanker',
             3:'Leaf-Blight',
             4:'Gammiris-pala-makka',
             5:'Diconocris-Distani-drake',
-            6:'NoT'
+            6:'NoDisease'
             }
 
 
