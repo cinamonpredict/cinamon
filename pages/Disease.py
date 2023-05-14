@@ -10,13 +10,12 @@ model = tf.keras.models.load_model("saved_model/disease.hdf5")
 uploaded_file = st.file_uploader("Choose a image file")
 
 map_dict = {0:'100Riceflour',
-            1:'Leaf Spot',
-            2:'Riceflour90Turmericpowder',
-            3:'100Turmericpowder',  
-            4:'RiceFlour75Turmericpowder',
-            5:'Riceflour95Turmeric',
-            6:'Leaf Blotch',
-            7:'Riceflour85Turmericpowder'
+            0:'StripeCanker'
+            1:'RoughBark',
+            2:'Sudupulli-White-spot',
+            3:'Leaf-Blight'
+            4:'Gammiris-pala-makka',
+            5:'Diconocris-Distani-drake'
             }
 
 
