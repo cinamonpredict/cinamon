@@ -36,7 +36,17 @@ if uploaded_file is not None:
         prediction = model.predict(img_reshape).argmax()
         st.title("Predicted Label for the image is {}".format(map_dict [prediction]))
         if map_dict [prediction] == "Sudupulli-White-spot":
-            st.title("If this disease heavily spreads in your field, apply insecticides which include Imidacloprid. 10ml per 10liter of water")
+            st.text_area("If this disease heavily spreads in your field, apply insecticides which include Imidacloprid. 10ml per 10liter of water")
+        if map_dict [prediction] == "StripeCanker":
+            st.text_area("maintenance of good soil drainage• Maintain proper sunlight")
+        if map_dict [prediction] == "RoughBark":
+            st.text_area("Apply fertilizer for Correct time and standard.maintenance of good soil drainage")
+        if map_dict [prediction] == "Leaf-Blight":
+            st.text_area("Control Shading.Protect water capacity of the soil by using soil covers.Remove effected branches and leaves.Manage suitable fertilizer.")
+        if map_dict [prediction] == "Gammiris-pala-makka": 
+            st.text_area("Remove effected leaves.Use insecticide which include dimethoate chemical (25ml per 10L of water)")
+        if map_dict [prediction] == "Diconocris-Distani-drake": 
+            st.text_area("mospilan insecticide (25ml per 10L of water)")
                         
                         
         
