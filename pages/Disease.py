@@ -35,7 +35,7 @@ if uploaded_file is not None:
     if Genrate_pred:
         prediction = model.predict(img_reshape).argmax()
         st.title("Predicted Label for the image is {}".format(map_dict [prediction]))
-    if map_dict [prediction] == "Sudupulli-White-spot":
+        if map_dict [prediction] == "Sudupulli-White-spot":
         st.title("If this disease heavily spreads in your field, apply insecticides which include Imidacloprid. 10ml per 10liter of water")
                         
                         
